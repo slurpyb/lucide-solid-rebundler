@@ -25,6 +25,6 @@
     "incremental": true
     },
     "exclude": ["node_modules", "dist"],
-    "include": ["src", "styled-system"]
+    "include": ["src"]
   }
   

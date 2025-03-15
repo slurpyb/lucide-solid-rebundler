@@ -13,12 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install
-        uses: ./.github/composite-actions/install
-
-      - name: Build packages
-        run: pnpm build
-
       - name: Publish packages
         run: pnpm publish --access public
         env:
