@@ -1,7 +1,11 @@
 {
-  "name": "lucide-solid-rebundler",
+  "name": "@slurpyb/lucide-solid-rebundler",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slurpyb/lucide-solid-rebundler.git"
@@ -15,9 +19,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "exports": {
     ".": {
       "source": "./src/index.ts",
