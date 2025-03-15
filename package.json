@@ -1,0 +1,44 @@
+{
+  "name": "lucide-solid-rebundler",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurpyb/lucide-solid-rebundler.git"
+  },
+  "author": "Jordan Sweeting <slurpyb@fastmail.com>",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "solid",
+    "lucide",
+    "icons"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.5.2",
+  "devDependencies": {
+    "lucide-solid": "^0.482.0",
+    "tsup": "^8.4.0"
+  }
+}
