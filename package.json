@@ -40,6 +40,7 @@
   "packageManager": "pnpm@10.5.2",
   "devDependencies": {
     "lucide-solid": "^0.482.0",
-    "tsup": "^8.4.0"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   }
 }
